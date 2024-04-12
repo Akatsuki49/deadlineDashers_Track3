@@ -35,6 +35,9 @@ Don't forget to add your own `.env` with **OpenAI API key** and the **secret tok
 
 If the `server.py` runs fine, you should be able to see `Running on http://127.0.0.1:5000` in the terminal.
 
+Note: When testing our app we noticed that the scrapy module threw some unexpected exceptions in some machines. 
+If you encounter any such error: please restart the server i.e the flask app
+
 ## Output
   1
   
