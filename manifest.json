@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "G2 hackathon",
+  "version": "0.0.1",
+  "description": "Get a writeup about a product just from its URL!",
+  "permissions": ["https://5271-1-6-74-117.ngrok-free.app/summarize"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "content_security_policy": "script-src 'self' https://5271-1-6-74-117.ngrok-free.app/summarize; object-src 'self'"
+}
