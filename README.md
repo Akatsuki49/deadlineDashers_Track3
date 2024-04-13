@@ -26,6 +26,22 @@ If the steps are correctly followed, you should be able to see the **G2 logo** i
 
 To run the server:
 
+First you need to start a CORS server (We have used ngrok for that)
+
+Open Command Prompt and run
+
+```bash
+ngrok http --host-header=rewrite 5000
+```
+
+Now, check the Forwarding Session Status and copy the .app url. This will be your `<your_ngrok_url>`
+
+Open `manifest.json` and replace the existing value of `permissions` with `[<your_ngrok_url>/summarize]`
+
+Also, replace the existing value of `content_security_policy` after `'self'` with `<your_ngrok_url>/summarize`
+
+Now, Open `popup.js` and after `fetch` inside paranthesis, replace the existing url with `<your_ngrok_url>/summarize`
+
 ```bash
 cd G2_Backend
 python app.py
