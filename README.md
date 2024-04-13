@@ -19,7 +19,7 @@ The high-level approach involves:
 
 ![G2 Extension](https://github.com/Akatsuki49/deadlineDashers_Track3/assets/110471762/91d9a563-6873-4e7e-9e5d-c85c5e88a09d)
 
-To run the server:
+## How to Run
 
 First you need to start a CORS server (We have used ngrok for that)
 
@@ -38,8 +38,6 @@ Open `manifest.json` and replace the existing value of `permissions` with `[<you
 Also, replace the existing value of `content_security_policy` after `'self'` with `<your_ngrok_url>/summarize`
 
 Now, Open `popup.js` and after `fetch` inside paranthesis, replace the existing url with `<your_ngrok_url>/summarize`
-
-## How to Run
 
 **Chrome extension settings > Toggle the Developer Mode > Load unpacked > Add the `deadlineDashers_Track3` (which is the clone GitHub Repository)**
 
