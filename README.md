@@ -36,11 +36,19 @@ ngrok http --host-header=rewrite 5000
 
 Now, check the Forwarding Session Status and copy the .app url. This will be your `<your_ngrok_url>`
 
+**Clone the GitHub Repository**
+
 Open `manifest.json` and replace the existing value of `permissions` with `[<your_ngrok_url>/summarize]`
 
 Also, replace the existing value of `content_security_policy` after `'self'` with `<your_ngrok_url>/summarize`
 
 Now, Open `popup.js` and after `fetch` inside paranthesis, replace the existing url with `<your_ngrok_url>/summarize`
+
+## How to Run
+
+**Chrome extension settings > Toggle the Developer Mode > Load unpacked > Add the `deadlineDashers_Track3` (which is the clone GitHub Repository)**
+
+If the steps are correctly followed, you should be able to see the **G2 logo** in your extensions bar.
 
 ```bash
 cd G2_Backend
