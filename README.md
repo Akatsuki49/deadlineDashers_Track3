@@ -16,11 +16,6 @@ The high-level approach involves:
 4. The extracted data is then cleaned and processed to generate a concise 3-4 line product summary.
 5. The generated summary is returned to the extension and displayed to the user.
 
-## How to Run
-
-**Chrome extension settings > Toggle the Developer Mode > Load unpacked > Add the `dist` folder of this project**
-
-If the steps are correctly followed, you should be able to see the **G2 logo** in your extensions bar.
 
 ![G2 Extension](https://github.com/Akatsuki49/deadlineDashers_Track3/assets/110471762/91d9a563-6873-4e7e-9e5d-c85c5e88a09d)
 
