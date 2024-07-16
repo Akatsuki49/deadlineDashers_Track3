@@ -113,7 +113,9 @@ If you encounter any such error: please restart the server i.e the flask app
    
    <img width="524" alt="image" src="https://github.com/user-attachments/assets/5e980dfe-7518-4127-be78-b321738cfd42">
 
-- **Redis In-Memory Key-Value Store:** We used the docker image of Redis and ran it as a local container. The Key-Value in memory DB is populated for fast fetching of intermediate results, for better processing. The summary value for each URL is stored as: [summary:{url} : *ActualSummary* ]
+- **Redis In-Memory Key-Value Store:** We used the docker image of Redis and ran it as a local container. The Key-Value in memory DB is populated for fast fetching of intermediate results, for better processing. The summary value for each URL is stored in the DB as
+
+  [summary:{url} : *ActualSummary* ].
 
   ![image](https://github.com/user-attachments/assets/ed978701-8db2-4c0f-bd60-006616aa506c)
 
